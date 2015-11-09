@@ -71,3 +71,12 @@ To setup this project in Jenkins, use the following configuration:
 [Karma]: http://karma-runner.github.io/
 [Jasmine]: http://jasmine.github.io/2.0/introduction.html
 [Protractor]: https://angular.github.io/protractor/
+
+# Developer Extras
+
+This framework has been set up to use x-auth-tokens so you can use the following from the command line:
+
+* curl -X POST localhost:8080/api/authenticate -d username=admin -d password=admin
+
+* curl -H "x-auth-token: admin:1447096962232:e1537c41194ce98ab338fdd66b1b4573" localhost:8080/api/users
+
